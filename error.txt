@@ -1,0 +1,102 @@
+C:\Projects\MyApp\TicTacToe_Final>heroku logs
+2017-09-20T18:23:28.752111+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-09-20T18:23:33.955863+00:00 app[web.1]:
+2017-09-20T18:23:33.955873+00:00 app[web.1]: > TicTacToe@0.1.0 start /app
+2017-09-20T18:23:33.955874+00:00 app[web.1]: > node index.js
+2017-09-20T18:23:33.955875+00:00 app[web.1]:
+2017-09-20T18:23:34.858855+00:00 app[web.1]: /app/node_modules/express/lib/express.js:107
+2017-09-20T18:23:34.858875+00:00 app[web.1]:       throw new Error('Most middleware (like ' + name + ') is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.');
+2017-09-20T18:23:34.858876+00:00 app[web.1]:       ^
+2017-09-20T18:23:34.858876+00:00 app[web.1]:
+2017-09-20T18:23:34.858878+00:00 app[web.1]: Error: Most middleware (like logger) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+2017-09-20T18:23:34.858879+00:00 app[web.1]:     at Function.get (/app/node_modules/express/lib/express.js:107:13)
+2017-09-20T18:23:34.858880+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:3:16)
+2017-09-20T18:23:34.858881+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-09-20T18:23:34.858882+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-09-20T18:23:34.858883+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-09-20T18:23:34.858883+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-09-20T18:23:34.858884+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-09-20T18:23:34.858885+00:00 app[web.1]:     at run (bootstrap_node.js:389:7)
+2017-09-20T18:23:34.858885+00:00 app[web.1]:     at Module.runMain (module.js:604:10)
+2017-09-20T18:23:34.858886+00:00 app[web.1]:     at startup (bootstrap_node.js:149:9)
+2017-09-20T18:23:34.879968+00:00 app[web.1]:
+2017-09-20T18:23:34.912141+00:00 app[web.1]: npm ERR! Linux 3.13.0-128-generic
+2017-09-20T18:23:34.912881+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-09-20T18:23:34.913627+00:00 app[web.1]: npm ERR! node v6.11.2
+2017-09-20T18:23:34.914251+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-09-20T18:23:34.914815+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-09-20T18:23:34.915800+00:00 app[web.1]: npm ERR! TicTacToe@0.1.0 start: `node index.js`
+2017-09-20T18:23:34.918306+00:00 app[web.1]: npm ERR! Exit status 1
+2017-09-20T18:23:34.919741+00:00 app[web.1]: npm ERR!
+2017-09-20T18:23:34.920806+00:00 app[web.1]: npm ERR! Failed at the TicTacToe@0.1.0 start script 'node index.js'.
+2017-09-20T18:23:34.921514+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-09-20T18:23:34.926784+00:00 app[web.1]: npm ERR!     node index.js
+2017-09-20T18:23:34.922358+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the TicTacToe package,
+2017-09-20T18:23:34.929746+00:00 app[web.1]: npm ERR!     npm bugs TicTacToe
+2017-09-20T18:23:34.927467+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-09-20T18:23:34.922898+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-09-20T18:23:34.931071+00:00 app[web.1]: npm ERR!     npm owner ls TicTacToe
+2017-09-20T18:23:34.930764+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-09-20T18:23:34.931940+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-09-20T18:23:34.926096+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-09-20T18:23:34.960715+00:00 app[web.1]:
+2017-09-20T18:23:34.964879+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-09-20T18:23:34.964385+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-09-20T18:23:35.071543+00:00 heroku[web.1]: Process exited with status 1
+2017-09-20T18:23:35.087314+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T18:23:36.669818+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=enigmatic-caverns-70252.herokuapp.com request_id=763eb032-621b-40e3-a77a-012ea8c9e418 fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T18:23:37.494772+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=enigmatic-caverns-70252.herokuapp.com request_id=07ac4990-fa0c-4c03-b8e6-146a2060e9a2 fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T18:23:40.939139+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=enigmatic-caverns-70252.herokuapp.com request_id=ab3ade20-487e-4d97-bdd5-14ce812e4f63 fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T18:23:45.080541+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=enigmatic-caverns-70252.herokuapp.com request_id=3fcf44d3-47bf-4dd6-ae86-e074a93aafa7 fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T18:26:54.000000+00:00 app[api]: Build started by user 1986allex@gmail.com
+2017-09-20T18:27:20.959889+00:00 app[api]: Deploy 60853bae by user 1986allex@gmail.com
+2017-09-20T18:27:20.959889+00:00 app[api]: Release v12 created by user 1986allex@gmail.com
+2017-09-20T18:27:21.897477+00:00 heroku[web.1]: State changed from crashed to starting
+2017-09-20T18:26:54.000000+00:00 app[api]: Build succeeded
+2017-09-20T18:27:24.184941+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-09-20T18:27:28.723034+00:00 app[web.1]:
+2017-09-20T18:27:28.723047+00:00 app[web.1]: > TicTacToe@0.1.0 start /app
+2017-09-20T18:27:28.723049+00:00 app[web.1]: > node index.js
+2017-09-20T18:27:28.723049+00:00 app[web.1]:
+2017-09-20T18:27:29.332502+00:00 app[web.1]: /app/node_modules/express/lib/express.js:107
+2017-09-20T18:27:29.332512+00:00 app[web.1]:       throw new Error('Most middleware (like ' + name + ') is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.');
+2017-09-20T18:27:29.332513+00:00 app[web.1]:       ^
+2017-09-20T18:27:29.332514+00:00 app[web.1]:
+2017-09-20T18:27:29.332515+00:00 app[web.1]: Error: Most middleware (like logger) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+2017-09-20T18:27:29.332516+00:00 app[web.1]:     at Function.get (/app/node_modules/express/lib/express.js:107:13)
+2017-09-20T18:27:29.332517+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:3:16)
+2017-09-20T18:27:29.332518+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-09-20T18:27:29.332519+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-09-20T18:27:29.332520+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-09-20T18:27:29.332517+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-09-20T18:27:29.332521+00:00 app[web.1]:     at Module.runMain (module.js:604:10)
+2017-09-20T18:27:29.332521+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-09-20T18:27:29.332522+00:00 app[web.1]:     at run (bootstrap_node.js:389:7)
+2017-09-20T18:27:29.332522+00:00 app[web.1]:     at startup (bootstrap_node.js:149:9)
+2017-09-20T18:27:29.369895+00:00 app[web.1]: npm ERR! Linux 3.13.0-123-generic
+2017-09-20T18:27:29.371392+00:00 app[web.1]: npm ERR!
+2017-09-20T18:27:29.351501+00:00 app[web.1]:
+2017-09-20T18:27:29.371569+00:00 app[web.1]: npm ERR! Failed at the TicTacToe@0.1.0 start script 'node index.js'.
+2017-09-20T18:27:29.371716+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-09-20T18:27:29.371874+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the TicTacToe package,
+2017-09-20T18:27:29.370275+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-09-20T18:27:29.372038+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-09-20T18:27:29.370490+00:00 app[web.1]: npm ERR! node v6.11.2
+2017-09-20T18:27:29.372721+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-09-20T18:27:29.370720+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-09-20T18:27:29.370891+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-09-20T18:27:29.371072+00:00 app[web.1]: npm ERR! TicTacToe@0.1.0 start: `node index.js`
+2017-09-20T18:27:29.373001+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-09-20T18:27:29.371178+00:00 app[web.1]: npm ERR! Exit status 1
+2017-09-20T18:27:29.372858+00:00 app[web.1]: npm ERR!     node index.js
+2017-09-20T18:27:29.373259+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-09-20T18:27:29.373398+00:00 app[web.1]: npm ERR!     npm owner ls TicTacToe
+2017-09-20T18:27:29.373152+00:00 app[web.1]: npm ERR!     npm bugs TicTacToe
+2017-09-20T18:27:29.377815+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-09-20T18:27:29.386570+00:00 app[web.1]:
+2017-09-20T18:27:29.386822+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-09-20T18:27:29.386931+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-09-20T18:27:29.488394+00:00 heroku[web.1]: Process exited with status 1
+2017-09-20T18:27:29.507056+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T18:27:31.192649+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=enigmatic-caverns-70252.herokuapp.com request_id=aa7dee31-bbb1-4ddb-9063-2da12c78b455 fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T18:27:32.333484+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=enigmatic-caverns-70252.herokuapp.com request_id=fc81c25e-571b-4b12-98fb-3d37d7851edf fwd="188.162.65.13" dyno= connect= service= status=503 bytes= protocol=https
