@@ -6,8 +6,8 @@
     "socket.io": "2.0.3"
   },
   "engines": {
-    "node": "6.11.x",
-    "npm": "3.10.x"
+    "node": "6.11.2",
+    "npm": "3.10.10"
   },
   "scripts": {
   "start": "node index.js"
