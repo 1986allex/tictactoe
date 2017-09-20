@@ -1,15 +1,11 @@
 {
-  "name": "TicTacToe",
-  "version": "0.1.0",
+  "name": "node-example",
+  "version": "0.0.1",
   "dependencies": {
-    "express": "4.15.2",
-    "socket.io": "2.0.3"
+    "express": "4.15.2"
   },
   "engines": {
     "node": "6.11.2",
     "npm": "3.10.10"
-  },
-  "scripts": {
-  "start": "node index.js"
-}
+  }
 }
