@@ -106,6 +106,6 @@ res.sendFile(__dirname + '/index.html');
 		return false
 	}
 	
-http.listen(8000, function(){
-  console.log("listening on *:8000");
+http.listen(3000, function(){
+  console.log("listening on *:3000");
 });
