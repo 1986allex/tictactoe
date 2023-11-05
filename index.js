@@ -9,10 +9,11 @@ app.use(express.static("static"));
 app.get('/', function(req, res){
 res.sendFile(__dirname + '/index.html');
 });
-	io.engine.on("initial_headers", (headers, request) => {
-        	headers["Access-Control-Allow-Origin"] = '*';
-    	});
+	
 	io.on("connection", function(socket){
+		io.engine.on("initial_headers", (headers, request) => {
+        		headers["Access-Control-Allow-Origin"] = '*';
+    		});
 		socket.on("reset", function(roomID) {
 			delete rooms[roomID];
 			io.sockets.to(roomID).emit('reset');
